@@ -12,6 +12,8 @@ class Equirectangular extends ComponentBase
     public $image="";
     public $autoRotate="";
     public $autoLoad="";
+    public $yaw=0;
+    public $pitch=0;
 
     public function componentDetails()
     {
@@ -49,6 +51,18 @@ class Equirectangular extends ComponentBase
                 'type'        => 'string',
                 'default'     => ''
             ],
+            'yaw' => [
+                'title'       => 'Yaw',
+                'description' => 'Initial Yaw angle in degrees',
+                'type'        => 'string',
+                'default'     => '0'
+            ],
+             'pitch' => [
+                'title'       => 'Pitch',
+                'description' => 'Initial Pitch angle in degrees',
+                'type'        => 'string',
+                'default'     => '0'
+            ],
              'autoLoad' => [
                 'title'       => 'Auto Load',
                 'description' => 'Auto Load image',
@@ -79,6 +93,8 @@ class Equirectangular extends ComponentBase
         $this->class =$this->page['class']= $this->property('class');
         $this->autoRotate =$this->page['autoRotate']= $this->property('autoRotate');
         $this->autoLoad =$this->page['autoLoad']= $this->property('autoLoad');
+        $this->yaw =$this->page['yaw']= $this->property('yaw');
+        $this->pitch =$this->page['pitch']= $this->property('pitch');
 
     }
 

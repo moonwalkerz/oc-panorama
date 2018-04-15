@@ -4,6 +4,8 @@ pannellum.viewer("{{ __SELF__.id }}", {
     "type": "equirectangular",
     "autoLoad": true,
     {% if autoRotate %} "autoRotate": {{autoRotate}},{% endif %}
+    {% if yaw %} "yaw": {{yaw}},{% endif %}
+    {% if pitch %} "pitch": {{pitch}},{% endif %}
     "panorama": "{{image}}"
 });
 </script>
