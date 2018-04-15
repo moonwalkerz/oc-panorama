@@ -1,0 +1,14 @@
+{% put scripts %}
+<script>
+pannellum.viewer("{{ __SELF__.id }}", {
+    "type": "equirectangular",
+    "autoLoad": true,
+    {% if autoRotate %} "autoRotate": {{autoRotate}},{% endif %}
+    "panorama": "{{image}}"
+});
+</script>
+{% endput %}
+
+<div class="{{class}}">
+<div id="{{ __SELF__.id }}"  style="width:100%;height:{{height}};"></div>
+</div>

@@ -1,0 +1,6 @@
+plugin:
+    name: 'martinimultimedia.panorama::lang.plugin.name'
+    description: 'martinimultimedia.panorama::lang.plugin.description'
+    author: 'Martini Multimedia'
+    icon: oc-icon-image
+    homepage: ''

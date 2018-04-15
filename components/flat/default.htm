@@ -1,0 +1,12 @@
+{% put scripts %}
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery("#{{ __SELF__.id }}").cyclotron({
+			continuous:0,
+			dampingFactor:1,
+			autorotation:1
+		});
+	});
+</script>
+{% endput %}
+<div id="{{ __SELF__.id }}" class="{{class}}" style="background-image:url('{{image}}'); width:100%; height:{{height}};"></div>
