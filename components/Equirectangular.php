@@ -14,6 +14,7 @@ class Equirectangular extends ComponentBase
     public $autoLoad="";
     public $yaw=0;
     public $pitch=0;
+    public $hfov=100;
 
     public function componentDetails()
     {
@@ -63,6 +64,13 @@ class Equirectangular extends ComponentBase
                 'type'        => 'string',
                 'default'     => '0'
             ],
+
+             'hfov' => [
+                'title'       => 'Horiz. FoV',
+                'description' => 'Field of view in degrees',
+                'type'        => 'string',
+                'default'     => '100'
+            ],
              'autoLoad' => [
                 'title'       => 'Auto Load',
                 'description' => 'Auto Load image',
@@ -95,6 +103,7 @@ class Equirectangular extends ComponentBase
         $this->autoLoad =$this->page['autoLoad']= $this->property('autoLoad');
         $this->yaw =$this->page['yaw']= $this->property('yaw');
         $this->pitch =$this->page['pitch']= $this->property('pitch');
+        $this->hfov =$this->page['hfov']= $this->property('hfov');
 
     }
 

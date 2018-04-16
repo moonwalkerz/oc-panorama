@@ -6,6 +6,7 @@ pannellum.viewer("{{ __SELF__.id }}", {
     {% if autoRotate %} "autoRotate": {{autoRotate}},{% endif %}
     {% if yaw %} "yaw": {{yaw}},{% endif %}
     {% if pitch %} "pitch": {{pitch}},{% endif %}
+    {% if hfov %} "hfov": {{hfov}},{% endif %}
     "panorama": "{{image}}"
 });
 </script>
